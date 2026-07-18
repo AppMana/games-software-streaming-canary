@@ -1,0 +1,7 @@
+plugins {
+  id 'base'
+  id 'unity'
+  id 'docker'
+}
+
+version '1.0.0'

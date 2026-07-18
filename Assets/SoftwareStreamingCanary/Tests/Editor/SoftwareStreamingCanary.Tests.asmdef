@@ -1,0 +1,13 @@
+{
+  "name": "AppMana.SoftwareStreamingCanary.Tests",
+  "rootNamespace": "AppMana.SoftwareStreamingCanary.Tests",
+  "references": [
+    "AppMana.SoftwareStreamingCanary.Runtime"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

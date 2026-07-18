@@ -1,0 +1,10 @@
+{
+  "name": "AppMana.SoftwareStreamingCanary.Editor",
+  "rootNamespace": "AppMana.SoftwareStreamingCanary.Editor",
+  "references": [
+    "AppMana.SoftwareStreamingCanary.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}
