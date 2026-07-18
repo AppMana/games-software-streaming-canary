@@ -1,9 +1,20 @@
 using NUnit.Framework;
+using UnityEditor;
+using UnityEngine.Rendering;
 
 namespace AppMana.SoftwareStreamingCanary.Tests
 {
   public class FramePatternTests
   {
+    [Test]
+    public void LinuxPlayerSupportsTheRuntimeVulkanContract()
+    {
+      Assert.That(PlayerSettings.GetUseDefaultGraphicsAPIs(BuildTarget.StandaloneLinux64), Is.False);
+      Assert.That(
+        PlayerSettings.GetGraphicsAPIs(BuildTarget.StandaloneLinux64),
+        Does.Contain(GraphicsDeviceType.Vulkan));
+    }
+
     [TestCase(0, 0)]
     [TestCase(1, 1)]
     [TestCase(2, 3)]
