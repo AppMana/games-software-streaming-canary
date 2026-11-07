@@ -1,4 +1,5 @@
 {
   "name": "AppMana.SoftwareStreamingCanary.Runtime",
-  "rootNamespace": "AppMana.SoftwareStreamingCanary"
+  "rootNamespace": "AppMana.SoftwareStreamingCanary",
+  "references": ["AppManaPublic", "Unity.InputSystem", "UnityEngine.UI"]
 }
