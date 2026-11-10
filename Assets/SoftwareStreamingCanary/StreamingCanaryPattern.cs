@@ -21,7 +21,8 @@ namespace AppMana.SoftwareStreamingCanary
     private void Awake()
     {
       Application.targetFrameRate = 30;
-      QualitySettings.vSyncCount = 0;
+      // Batch Vulkan players have no presentation swapchain for the vSync setter.
+      if (!Application.isBatchMode) QualitySettings.vSyncCount = 0;
       var camera = GetComponent<Camera>();
       camera.clearFlags = CameraClearFlags.SolidColor;
       camera.backgroundColor = Color.black;
